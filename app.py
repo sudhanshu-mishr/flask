@@ -21,7 +21,6 @@ if __name__=="__main__":
 
 def create_app():
     app = Flask(__name__)
-    # TODO: change this in production
     app.config['SECRET_KEY'] = 'change-this-secret-key'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///connect_pu.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -231,4 +230,4 @@ if __name__ == '__main__':
     app = create_app()
     with app.app_context():
         db.create_all()
-    app.run(host-"0.0.0.0",debug-True)
+    app.run(host="0.0.0.0",debug=True)
