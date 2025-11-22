@@ -15,6 +15,8 @@ from werkzeug.utils import secure_filename
 
 from forms import RegistrationForm, LoginForm, ProfileForm, MessageForm
 from models import db, User, Swipe, Message, is_match
+if __name__=="__main__":
+    app.run(host-"0.0.0.0",debug-True)
 
 
 def create_app():
@@ -229,4 +231,4 @@ if __name__ == '__main__':
     app = create_app()
     with app.app_context():
         db.create_all()
-    app.run(debug=True)
+    app.run(host-"0.0.0.0",debug-True)
